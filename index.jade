@@ -1,0 +1,11 @@
+doctype html
+html(lang='en')
+  head
+    title jpm
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css")
+    link(rel="stylesheet" href="styles/app.css")
+    script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2VzWqNiAgLVuNMUCvq4xHgKWYiNItLPk&sensor=true")
+  body(ng-app='app')
+    div(ui-view="header")
+    div#main-container(ui-view="container")
+    script(src='app.js')
