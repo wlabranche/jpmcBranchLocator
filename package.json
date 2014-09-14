@@ -1,21 +1,30 @@
 {
   "name": "jpm",
   "version": "0.0.0",
-  "description": "",
+  "description": "a basic branch locator for Chase banks",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "karma start karma.conf.js"
   },
   "author": "will labranche",
   "license": "MIT",
   "devDependencies": {
+    "angular-mocks": "^1.2.22",
     "browser-sync": "^1.3.6",
     "browserify": "^5.11.1",
     "gulp": "^3.8.8",
     "gulp-jade": "^0.7.0",
+    "gulp-karma": "0.0.4",
+    "gulp-shell": "^0.2.9",
     "gulp-stylus": "^1.3.2",
     "jade": "^1.6.0",
     "jadeify": "^2.5.1",
+    "karma": "^0.12.23",
+    "karma-bro": "^0.7.0",
+    "karma-chrome-launcher": "^0.1.4",
+    "karma-jasmine": "^0.1.5",
+    "karma-phantomjs-launcher": "^0.1.4",
+    "karma-spec-reporter": "0.0.13",
     "vinyl-source-stream": "^1.0.0",
     "watchify": "^1.0.2"
   },
