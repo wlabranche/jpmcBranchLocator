@@ -1,9 +1,10 @@
 doctype html
 html(lang='en')
   head
-    title jpm
+    title Chase Branch Locator
     link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css")
     link(rel="stylesheet" href="styles/app.css")
+    // I shouldn't be hard coding this, it's just easier for the user to download and start this way
     script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2VzWqNiAgLVuNMUCvq4xHgKWYiNItLPk&sensor=true")
   body(ng-app='app')
     div(ui-view="header")

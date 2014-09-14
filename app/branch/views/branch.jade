@@ -1,0 +1,28 @@
+div
+  .row
+    h1.branch-detail-header.text-center {{branch.name}}
+  .row
+    .col-sm-6
+      .list-group
+        .list-group-item
+          .row
+            p.branch-detail-subheading.text-right.col-xs-3 Address:
+            .col-xs-9
+              p.detail {{branch.address.toUpperCase()}}
+              p.detail {{branch.city.toUpperCase()}}, {{branch.state}}
+              p.detail(branch-phone phone="branch.phone" ng-hide="!branch.phone") {{branch.phone}}
+        .list-group-item(ng-hide='branch.locType==="branch"')
+          .row
+            p.branch-detail-subheading.text-right.col-xs-3 Type:
+            p.col-xs-9.detail {{branch.locType.toUpperCase()}}
+        .list-group-item(ng-hide="!branch.lobbyHrs")
+          .row
+            p.branch-detail-subheading.text-right.col-xs-3 Hours:
+            .col-xs-9
+              .row(ng-repeat="hours in branch.lobbyHrs track by $index")
+                .col-xs-3.text-right.detail {{days[$index]}}:
+                .col-xs-9.detail {{hours.length ? hours : 'Closed'}}
+    .col-sm-6.map-sm-container
+      main-map(lat="branch.lat" lng="branch.lng")
+      row.text-center.distance
+        p Distance: {{branch.distance}} miles from you
