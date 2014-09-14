@@ -2,8 +2,8 @@
 
 var gulp = require( 'gulp' );
 
-gulp.task( 'watch', ['setWatch', 'browserSync'], function () {
-  gulp.watch( 'index.jade', ['html'] ); 
+gulp.task( 'watch', ['setWatch', 'test', 'browserSync'], function () {
+  gulp.watch( 'index.jade', ['html'] );
   gulp.watch( './app/**/*.styl', ['styles'] );
   gulp.watch( './assets/*', ['assets']);
 });
