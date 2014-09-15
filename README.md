@@ -11,4 +11,4 @@ This will install all dependencies, bundle everything with `browserify`,
 transform all `jade` (used mostly for fast templating) and `stylus` files, lauch a `browserSync` server that will serve everyting up from './public'
 and watch for any changed files, rebuilding and reloading on any changes.
 
-Test will be run automatically on each build with `karma`
+Test will be run automatically on each build with `karma`.
